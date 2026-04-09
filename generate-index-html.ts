@@ -15,7 +15,7 @@ const template = readFileSync("./template.html", "utf-8");
 const randomImageCode = `<script type="text/javascript">
   const images = ${JSON.stringify(imageFiles)};
   const randomImage = images[Math.floor(Math.random() * images.length)];
-  const imageUrl = '/assets/illust/' + randomImage;
+  const imageUrl = 'https://failure.nijiurachan.net/assets/illust/' + randomImage;
   document.write('<img src="' + imageUrl + '" alt="random image"">');
 </script>`;
 
